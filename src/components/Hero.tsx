@@ -5,9 +5,10 @@ interface HeroProps {
   title: string;
   videoId: string;
   backgroundImage?: string;
+  thumbnailImage?: string;
 }
 
-const Hero = ({ title, videoId, backgroundImage }: HeroProps) => {
+const Hero = ({ title, videoId, backgroundImage, thumbnailImage }: HeroProps) => {
   return (
     <div 
       className="min-h-screen flex flex-col justify-between relative overflow-hidden"
@@ -20,7 +21,10 @@ const Hero = ({ title, videoId, backgroundImage }: HeroProps) => {
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80 z-0"></div>
       
       <div className="flex-1 flex items-center justify-center z-10">
-        <VideoPlayer videoId={videoId} />
+        <VideoPlayer 
+          videoId={videoId}
+          thumbnailImage={thumbnailImage} 
+        />
       </div>
       
       <div className="p-8 md:p-16 z-10">
