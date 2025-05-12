@@ -15,8 +15,7 @@ const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
       style={{
         backgroundImage: thumbnailImage ? `url(${thumbnailImage})` : 'none',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        paddingBottom: '50px' // Show 50px of white section
+        backgroundPosition: 'center'
       }}
     >      
       <div className="flex flex-col h-[calc(100vh-50px)] w-full">
@@ -27,7 +26,7 @@ const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
         </div>
         
         <div className="flex-1 flex items-end justify-start z-10 w-full relative">
-          <div className="absolute bottom-36 left-12 z-20">
+          <div className="absolute bottom-24 left-12 z-20">
             <h1 className="hero-text text-left">
               {title}
             </h1>
