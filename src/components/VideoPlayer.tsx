@@ -37,31 +37,11 @@ const VideoPlayer = ({ videoId, thumbnailImage }: VideoPlayerProps) => {
 
   return (
     <>
-      <div className="flex justify-center items-center w-full h-full">
-        {thumbnailImage && (
-          <div className="relative cursor-pointer w-full h-full" onClick={openVideo}>
-            <img 
-              src={thumbnailImage} 
-              alt="Film thumbnail" 
-              className="w-full h-full object-cover"
-              style={{ maxHeight: '90vh' }}
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button
-                className="play-button"
-                aria-label="Play trailer"
-              />
-            </div>
-          </div>
-        )}
-        
-        {!thumbnailImage && (
-          <button
-            onClick={openVideo}
-            className="play-button"
-            aria-label="Play trailer"
-          />
-        )}
+      <div className="play-button-container absolute inset-0 flex items-center justify-center cursor-pointer" onClick={openVideo}>
+        <button
+          className="play-button"
+          aria-label="Play trailer"
+        />
       </div>
 
       {showVideo && (

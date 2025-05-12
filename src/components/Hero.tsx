@@ -4,11 +4,10 @@ import VideoPlayer from "./VideoPlayer";
 interface HeroProps {
   title: string;
   videoId: string;
-  backgroundImage?: string;
   thumbnailImage?: string;
 }
 
-const Hero = ({ title, videoId, backgroundImage, thumbnailImage }: HeroProps) => {
+const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
   return (
     <div 
       className="min-h-screen w-full flex flex-col relative overflow-hidden"
@@ -26,11 +25,6 @@ const Hero = ({ title, videoId, backgroundImage, thumbnailImage }: HeroProps) =>
         </div>
         
         <div className="flex-1 flex items-center justify-center z-10 w-full relative">
-          <VideoPlayer 
-            videoId={videoId}
-            thumbnailImage={thumbnailImage} 
-          />
-          
           <div className="absolute bottom-12 left-12 z-20">
             <h1 className="hero-text text-left">
               {title}

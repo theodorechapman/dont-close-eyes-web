@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -144,6 +145,10 @@
   text-transform: uppercase;
 }
 
+.play-button-container {
+  z-index: 20;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -189,6 +194,7 @@
 .white-section {
   background-color: white;
   min-height: 100vh;
+  padding: 1rem 0;
 }
 
 .white-bar {
