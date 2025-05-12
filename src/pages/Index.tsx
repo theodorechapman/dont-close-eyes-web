@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import VideoPlayer from "@/components/VideoPlayer";
 import LogLine from "@/components/LogLine";
 import LaurelCarousel from "@/components/LaurelCarousel";
+import AudienceReviews from "@/components/AudienceReviews";
 import DirectorStatement from "@/components/DirectorStatement";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const laurels = [
@@ -26,7 +28,31 @@ const Index = () => {
     {
       imageUrl: "public/lovable-uploads/f8d8d9b3-7bf1-42d2-a71e-189bc0477ba2.png",
       altText: "Official Selection - Golden FEMI Film Festival 2025"
+    },
+    {
+      imageUrl: "public/lovable-uploads/83c1428e-c7e7-48de-8354-88155043be39.png",
+      altText: "IMDb Rating 8.3/10 (223 votes)"
     }
+  ];
+
+  const audienceReviews = [
+    { quote: "A film that heals both body and soul." },
+    { quote: "An unforgettable experience - I had to force myself to breathe." },
+    { quote: "Not just recommended - prescribed!" },
+    { quote: "A world-class production with a cosmic message." },
+    { quote: "The audience sat in stunned silence after the credits." },
+    { quote: "A film that is felt, not just watched." },
+    { quote: "One of the most powerful Bulgarian films ever made." },
+    { quote: "A masterpiece that purifies the soul." },
+    { quote: "The story will echo in my mind forever." },
+    { quote: "A cinematic miracle born of love, truth, and faith." },
+    { quote: "No special effects - just pure, soul-piercing cinema." },
+    { quote: "Aleksandar Kanev's performance is simply divine." },
+    { quote: "After decades, a true, meaningful Bulgarian film has arrived." },
+    { quote: "I left the theater cleansed and speechless." },
+    { quote: "A stunning work of art that captures every emotion." },
+    { quote: "After watching, you realize material things don't matter." },
+    { quote: "A powerful, emotional, life-changing experience." }
   ];
 
   const loglineText = "When a boy gets blamed for his sister's death, he escapes into the mountains and is sheltered by monks. Decades later, a modern-day priest's fate becomes unexpectedly intertwined.";
@@ -39,19 +65,22 @@ const Index = () => {
         <Hero 
           title="DON'T CLOSE YOUR EYES" 
           videoId="CphPCxEUZHM"
-          thumbnailImage="public/lovable-uploads/0025e419-60ac-4661-8e93-e5be221387ce.png"
+          thumbnailImage="public/lovable-uploads/77f38679-742f-4afd-b471-d00e35cebd3b.png"
         />
         <VideoPlayer
           videoId="CphPCxEUZHM"
-          thumbnailImage="public/lovable-uploads/0025e419-60ac-4661-8e93-e5be221387ce.png"
+          thumbnailImage="public/lovable-uploads/77f38679-742f-4afd-b471-d00e35cebd3b.png"
         />
       </div>
       
       <div className="white-section text-black">
         <LogLine text={loglineText} />
         <LaurelCarousel laurels={laurels} />
+        <AudienceReviews reviews={audienceReviews} />
         <DirectorStatement name="Nikolay Egermann" statement={directorStatement} />
       </div>
+      
+      <Footer />
     </main>
   );
 };

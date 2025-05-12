@@ -10,12 +10,11 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { useCarousel } from "@/components/ui/carousel";
 
-interface LaurelProps {
-  imageUrl: string;
-  altText: string;
+interface ReviewProps {
+  quote: string;
 }
 
-const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
+const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
   const [api, setApi] = useState<ReturnType<typeof useCarousel>["api"]>();
   
   // Auto-rotate carousel every 3 seconds
@@ -30,27 +29,23 @@ const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
   }, [api]);
 
   return (
-    <div className="py-16 px-8">
-      <h2 className="text-3xl font-bold mb-8 text-black text-center">AWARDS & SELECTIONS</h2>
+    <div className="py-16 px-8 bg-gray-50">
+      <h2 className="text-3xl font-bold mb-8 text-black text-center">OUR AUDIENCES</h2>
       <Carousel
         opts={{
-          align: "start",
+          align: "center",
           loop: true,
         }}
         setApi={setApi}
         className="w-full max-w-5xl mx-auto"
       >
         <CarouselContent>
-          {laurels.map((laurel, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1">
-                <Card className="border-none shadow-none">
-                  <CardContent className="flex items-center justify-center p-2">
-                    <img 
-                      src={laurel.imageUrl} 
-                      alt={laurel.altText} 
-                      className="w-full h-auto max-h-64 object-contain"
-                    />
+          {reviews.map((review, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+              <div className="p-4">
+                <Card className="border border-gray-200 shadow-sm">
+                  <CardContent className="p-6">
+                    <p className="text-xl text-center italic font-medium text-black">"{review.quote}"</p>
                   </CardContent>
                 </Card>
               </div>
@@ -66,4 +61,4 @@ const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
   );
 };
 
-export default LaurelCarousel;
+export default AudienceReviews;
