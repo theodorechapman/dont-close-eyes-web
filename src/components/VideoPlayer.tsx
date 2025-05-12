@@ -43,8 +43,8 @@ const VideoPlayer = ({ videoId, thumbnailImage }: VideoPlayerProps) => {
             <img 
               src={thumbnailImage} 
               alt="Film thumbnail" 
-              className="w-full h-auto object-cover"
-              style={{ maxHeight: '80vh' }}
+              className="w-full h-full object-cover"
+              style={{ maxHeight: '90vh' }}
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <button

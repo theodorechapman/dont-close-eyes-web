@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -160,8 +159,8 @@
 
 .modal-content {
   position: relative;
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1600px;
   aspect-ratio: 16/9;
 }
 
@@ -190,4 +189,9 @@
 .white-section {
   background-color: white;
   min-height: 100vh;
+}
+
+.white-bar {
+  position: relative;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
 }
