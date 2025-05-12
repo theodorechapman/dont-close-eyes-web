@@ -1,4 +1,5 @@
 
+import { ArrowDown } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 
 interface HeroProps {
@@ -10,14 +11,14 @@ interface HeroProps {
 const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
   return (
     <div 
-      className="min-h-screen w-full flex flex-col relative overflow-hidden"
+      className="min-h-[calc(100vh-50px)] w-full flex flex-col relative overflow-hidden"
       style={{
         backgroundImage: thumbnailImage ? `url(${thumbnailImage})` : 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >      
-      <div className="flex flex-col h-screen w-full">
+      <div className="flex flex-col h-[calc(100vh-50px)] w-full">
         <div className="z-10 py-6 absolute w-full top-0">
           <h2 className="text-center font-bold text-2xl tracking-wide">
             ICXC NIKA / ITCHY RODENT FILMS
@@ -30,6 +31,11 @@ const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
               {title}
             </h1>
           </div>
+        </div>
+        
+        {/* Scroll down arrow */}
+        <div className="absolute bottom-20 right-12 z-20 animate-bounce">
+          <ArrowDown size={36} className="text-white" />
         </div>
       </div>
       

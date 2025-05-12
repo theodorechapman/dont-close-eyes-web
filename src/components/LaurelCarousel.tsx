@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -8,7 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { useCarousel } from "@/components/ui/carousel";
 
 interface LaurelProps {
   imageUrl: string;
@@ -16,7 +15,7 @@ interface LaurelProps {
 }
 
 const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
-  const [api, setApi] = useState<ReturnType<typeof useCarousel>["api"]>();
+  const [api, setApi] = useState<any>(null);
   
   // Auto-rotate carousel every 3 seconds
   useEffect(() => {

@@ -1,5 +1,5 @@
 
-import { Instagram, Facebook, Twitter } from "lucide-react";
+import { Instagram, Facebook, X } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
               <Facebook size={32} />
             </a>
             <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
-              <Twitter size={32} />
+              <X size={32} />
             </a>
             <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
               <span className="flex items-center justify-center h-8 w-8">

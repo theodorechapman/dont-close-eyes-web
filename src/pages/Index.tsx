@@ -10,23 +10,23 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const laurels = [
     {
-      imageUrl: "public/lovable-uploads/88bd40db-cd38-4cfe-acbd-658063fffb51.png",
+      imageUrl: "public/lovable-uploads/d760ff68-e491-430e-8a8b-19a1ca4e3560.png",
       altText: "Winner Best Cinematography - International Christian Film and Music Festival 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/425f6457-575a-4082-8852-c9114e96d14f.png",
+      imageUrl: "public/lovable-uploads/8c89e2dc-269b-48a1-b9a8-5474ffd7c121.png",
       altText: "Best Foreign Language Film - London FFI 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/64419dfb-d482-4eb0-badb-c34fa64f0d2b.png",
+      imageUrl: "public/lovable-uploads/cec3e381-98c9-4866-b338-6cf78caf6343.png",
       altText: "Best Foreign Film - 53rd Annual ICVM Crown Awards 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/564f261f-1e40-4e63-9c15-74ca67ff4373.png",
+      imageUrl: "public/lovable-uploads/01b71563-8abb-4b3d-aa0c-f9179d05bbc8.png",
       altText: "Official Selection - Eurasian Creative Guild Film Festival 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/f8d8d9b3-7bf1-42d2-a71e-189bc0477ba2.png",
+      imageUrl: "public/lovable-uploads/f763a5e1-0f81-4d0b-987e-db2e4d0076de.png",
       altText: "Official Selection - Golden FEMI Film Festival 2025"
     },
     {

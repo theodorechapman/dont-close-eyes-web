@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -8,14 +8,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { useCarousel } from "@/components/ui/carousel";
 
 interface ReviewProps {
   quote: string;
 }
 
 const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
-  const [api, setApi] = useState<ReturnType<typeof useCarousel>["api"]>();
+  const [api, setApi] = useState<any>(null);
   
   // Auto-rotate carousel every 3 seconds
   useEffect(() => {
@@ -29,7 +28,7 @@ const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
   }, [api]);
 
   return (
-    <div className="py-16 px-8 bg-gray-50">
+    <div className="py-16 px-8 bg-white">
       <h2 className="text-3xl font-bold mb-8 text-black text-center">OUR AUDIENCES</h2>
       <Carousel
         opts={{
