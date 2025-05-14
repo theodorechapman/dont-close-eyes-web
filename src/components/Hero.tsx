@@ -13,12 +13,9 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
   const isMobile = useIsMobile();
   
   const scrollToContent = () => {
-    // Get the height of the hero section
-    const heroHeight = document.querySelector('.min-h-[calc(100vh-50px)]')?.clientHeight || 0;
-    
-    // Scroll to the position just below the hero section
-    window.scrollTo({
-      top: heroHeight,
+    // Scroll down by the viewport height
+    window.scrollBy({
+      top: window.innerHeight,
       behavior: 'smooth'
     });
   };
