@@ -31,8 +31,15 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
     >      
       <div className="flex flex-col h-[calc(100vh-50px)] w-full">
         <div className="z-10 py-6 absolute w-full top-0">
-          <h2 className="text-center font-bold text-2xl">
-            ICXC NIKA and ITCHY RODENT FILMS
+          <h2 className="text-center">
+            <a 
+              href="https://itchyrodentfilms.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-bold text-2xl hover:text-gray-300 transition-colors"
+            >
+              ICXC NIKA and ITCHY RODENT FILMS
+            </a>
           </h2>
         </div>
         
@@ -42,7 +49,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
             style={{ 
               transform: isMobile ? 'translateY(75px)' : 'translateY(125px)',
               left: isMobile ? '50%' : '3rem',
-              marginLeft: isMobile ? '-47.5%' : '0', // Center on mobile by offsetting by half width
+              marginLeft: isMobile ? '-50%' : '0', // Centered on mobile
             }}
           >
             {/* Replace text with image */}
@@ -54,7 +61,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           </div>
         </div>
         
-        {/* Scroll down arrow button - moved above the thumbnail area for better visibility */}
+        {/* Scroll down arrow button - positioned above the thumbnail area for better visibility */}
         <button 
           onClick={scrollToContent}
           className="absolute bottom-32 right-12 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
