@@ -26,7 +26,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         </div>
         
         <div className="flex-1 flex items-end justify-start z-10 w-full relative">
-          <div className="absolute bottom-24 left-12 z-20">
+          <div className="absolute bottom-24 left-12 z-20" style={{ transform: 'translateY(125px)' }}>
             {/* Replace text with image */}
             <img 
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
