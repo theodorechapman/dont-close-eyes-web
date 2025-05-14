@@ -8,7 +8,7 @@ interface HeroProps {
   thumbnailImage?: string;
 }
 
-const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
+const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
   return (
     <div 
       className="min-h-[calc(100vh-50px)] w-full flex flex-col relative overflow-hidden"
@@ -27,16 +27,12 @@ const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
         
         <div className="flex-1 flex items-end justify-start z-10 w-full relative">
           <div className="absolute bottom-24 left-12 z-20">
-            <h1 
-              className="hero-text text-left"
-              style={{ 
-                fontFamily: "'Tenor Sans', sans-serif", 
-                fontWeight: 700, 
-                textTransform: 'uppercase' 
-              }}
-            >
-              {title}
-            </h1>
+            {/* Replace text with image */}
+            <img 
+              src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
+              alt="Don't Close Your Eyes" 
+              className="max-w-[80%] h-auto"
+            />
           </div>
         </div>
         
