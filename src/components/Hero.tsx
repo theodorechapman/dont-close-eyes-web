@@ -27,7 +27,14 @@ const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
         
         <div className="flex-1 flex items-end justify-start z-10 w-full relative">
           <div className="absolute bottom-24 left-12 z-20">
-            <h1 className="hero-text text-left">
+            <h1 
+              className="hero-text text-left"
+              style={{ 
+                fontFamily: "'Tenor Sans', sans-serif", 
+                fontWeight: 700, 
+                textTransform: 'uppercase' 
+              }}
+            >
               {title}
             </h1>
           </div>
