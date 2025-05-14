@@ -5,6 +5,7 @@ import LogLine from "@/components/LogLine";
 import LaurelCarousel from "@/components/LaurelCarousel";
 import AudienceReviews from "@/components/AudienceReviews";
 import DirectorStatement from "@/components/DirectorStatement";
+import Cast from "@/components/Cast"; // Importing the new Cast component
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -75,8 +76,9 @@ const Index = () => {
       </div>
       
       <div className="white-section text-black">
-        <LogLine text={loglineText} />
         <LaurelCarousel laurels={laurels} />
+        <LogLine text={loglineText} />
+        <Cast />
         <AudienceReviews reviews={audienceReviews} />
         <DirectorStatement name="Nikolay Egermann" statement={directorStatement} />
       </div>
