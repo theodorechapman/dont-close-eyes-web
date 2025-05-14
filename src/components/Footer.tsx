@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-8">
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-2xl font-bold mb-6">FOLLOW US</h3>
+          <h3 className="text-2xl font-bold mb-6 capitalize">Follow us</h3>
           <div className="flex space-x-6">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
               <Instagram size={32} />
@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="mt-8">
-            <p className="text-sm text-gray-400">© 2025 Don't Close Your Eyes. All rights reserved.</p>
+            <p className="text-sm text-gray-400 normal-case">© 2025 Don't Close Your Eyes. All rights reserved.</p>
           </div>
         </div>
       </div>

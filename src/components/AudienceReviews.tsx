@@ -29,7 +29,7 @@ const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
 
   return (
     <div className="py-16 container mx-auto px-8 max-w-6xl bg-white">
-      <h2 className="text-3xl font-bold mb-8 text-black text-center">OUR AUDIENCES</h2>
+      <h2 className="text-3xl font-bold mb-8 text-black text-center capitalize">Our audiences</h2>
       <Carousel
         opts={{
           align: "center",
@@ -44,7 +44,7 @@ const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
               <div className="p-4">
                 <Card className="border border-gray-200 shadow-sm">
                   <CardContent className="p-6">
-                    <p className="text-xl text-center italic font-medium text-black">"{review.quote}"</p>
+                    <p className="text-xl text-center italic font-medium text-black normal-case">"{review.quote}"</p>
                   </CardContent>
                 </Card>
               </div>

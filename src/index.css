@@ -106,7 +106,7 @@
     background-color: #0a0a0a;
     color: #ffffff;
     overflow-x: hidden;
-    text-transform: uppercase;
+    text-transform: none;  /* Changed from uppercase to none for normal case */
   }
 }
 

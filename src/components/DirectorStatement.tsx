@@ -10,11 +10,11 @@ const DirectorStatement = ({ name, statement }: DirectorStatementProps) => {
   
   return (
     <div className="py-16 container mx-auto px-8 max-w-6xl">
-      <h2 className="text-3xl font-bold mb-8 text-black text-center">DIRECTOR'S STATEMENT</h2>
-      <h3 className="text-xl font-bold mb-4 text-black text-center">{name}</h3>
+      <h2 className="text-3xl font-bold mb-8 text-black text-center capitalize">Director's statement</h2>
+      <h3 className="text-xl font-bold mb-4 text-black text-center capitalize">{name}</h3>
       <div className="text-black space-y-4">
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="leading-relaxed text-lg">{paragraph}</p>
+          <p key={index} className="leading-relaxed text-lg normal-case">{paragraph}</p>
         ))}
       </div>
     </div>
