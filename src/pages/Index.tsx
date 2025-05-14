@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import VideoPlayer from "@/components/VideoPlayer";
 import LogLine from "@/components/LogLine";
@@ -55,7 +54,9 @@ const Index = () => {
     { quote: "A powerful, emotional, life-changing experience." }
   ];
 
-  const loglineText = "When a boy gets blamed for his sister's death, he escapes into the mountains and is sheltered by monks. Decades later, a modern-day priest's fate becomes unexpectedly intertwined.";
+  // We don't need the loglineText variable anymore as it's directly in the LogLine component
+  // But we'll keep it empty for the props
+  const loglineText = "";
 
   const directorStatement = "Creating \"Don't Close Your Eyes\" has been a captivating journey for me, one that has deeply intertwined with my personal experiences and artistic sensibilities. The film is not just a story but a reflection of the shadows and hopes we harbor within us. I was inspired to tell this story by the encounter of my mother with breast cancer. It was this poignant memory that stirred me to explore the narrative through the lens of my camera, turning internal fears into a visual experience.\n\nAt its core, \"Don't Close Your Eyes\" seeks to examine the human condition in its rawest form, drawing attention to the vulnerabilities that define us. My sensibilities as an artist have always leaned towards dissecting the intricate nuances of human emotions. This film allowed me to delve into the facets of fear - how it paralyzes us, and yet, how it can serve as a powerful catalyst for growth when confronted. I believe that by facing our fears, we open the door to profound transformation, and this is a theme I sought to bring to life through vivid cinematography and evocative storytelling.\n\nThe experience of making this film has been one of profound introspection and collaboration. Each scene, dialogue, and character arc was crafted to resonate with authenticity, something I hold dear as a director. Collaborating with an incredibly talented cast and crew allowed me to push the creative boundaries and bring a vision alive that is both intimate and universal.\n\"Don't Close Your Eyes\" is a testament to the strength of storytelling and the shared human experience. My hope is that it will encourage audiences to reflect on their own fears and emerge stronger, acknowledging the light that can emerge from the shadows when we dare to keep our eyes open.";
 

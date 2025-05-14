@@ -29,7 +29,7 @@ const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
 
   return (
     <div className="py-16 container mx-auto px-8 max-w-6xl bg-white">
-      <h2 className="text-3xl font-bold mb-8 text-black text-center capitalize">Our audiences</h2>
+      <h2 className="text-3xl font-bold mb-8 text-black text-center uppercase">OUR AUDIENCES</h2>
       <Carousel
         opts={{
           align: "center",
