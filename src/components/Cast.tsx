@@ -66,31 +66,34 @@ const Cast = () => {
       imdbLink: "https://www.imdb.com/name/nm1930377/?ref_=fn_al_nm_1"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-      name: "Elena Stoyanova",
-      role: "Mother Superior",
-      quote: "The wisdom in this character's journey resonates with me."
+      imageUrl: "/lovable-uploads/603ee084-04f3-4224-8330-c420aae03e07.png",
+      name: "Pavel Poppandov",
+      role: "Ivan, Peter's Father",
+      quote: "There's a story in this film that echoes something I've lived through, and that's why I felt I had to be part of it.",
+      imdbLink: "https://www.imdb.com/name/nm0691057/?ref_=nv_sr_srsg_0_tt_0_nm_1_in_0_q_Pavel%2520Popandov"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1518495973542-4542c06a5843",
-      name: "Ivan Yordanov",
-      role: "Elder Monk Teodosii",
-      quote: "Portraying wisdom and humility was a spiritual experience."
+      imageUrl: "/lovable-uploads/0c9eb4d7-e6e3-4766-97d4-37b48e4d1d29.png",
+      name: "Maria Kavardjikova",
+      role: "Stanka, Peter's Mother",
+      quote: "What drew me in was the script and the chance to reunite on screen with Pavel Poppandov.",
+      imdbLink: "https://www.imdb.com/name/nm0442626/?ref_=fn_al_nm_1"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb",
-      name: "Nikolai Petrov",
-      role: "Dr. Stefan",
-      quote: "Playing a character torn between science and faith challenged me."
+      imageUrl: "/lovable-uploads/24ae05ef-9b26-41cf-9fdb-f5a440a94bf2.png",
+      name: "Krastyu Lafazanov",
+      role: "Father Stefan",
+      quote: "I chose this role because this film is a testament to faith, hope, and love.",
+      imdbLink: "https://www.imdb.com/name/nm0480754/?ref_=fn_al_nm_1"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      imageUrl: "https://images.unsplash.com/photo-1469041797191-50ace28483c3",
       name: "Sofia Ivanova",
       role: "Sister Margarita",
       quote: "Her strength in adversity inspired me throughout filming."
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+      imageUrl: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2",
       name: "Georgi Dimitrov",
       role: "Father Kiril",
       quote: "This role taught me about compassion and forgiveness."
