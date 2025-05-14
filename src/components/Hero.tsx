@@ -41,9 +41,11 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         
         <div className="flex-1 flex items-end justify-start z-10 w-full relative">
           <div 
-            className="absolute bottom-24 left-12 z-20"
+            className="absolute bottom-24 z-20"
             style={{ 
               transform: isMobile ? 'translateY(75px)' : 'translateY(125px)',
+              left: isMobile ? '50%' : '3rem',
+              marginLeft: isMobile ? '-47.5%' : '0', // Center on mobile by offsetting by half width
             }}
           >
             {/* Replace text with image */}
@@ -55,10 +57,10 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           </div>
         </div>
         
-        {/* Scroll down arrow - now a button */}
+        {/* Scroll down arrow button - moved above the thumbnail area for better visibility */}
         <button 
           onClick={scrollToContent}
-          className="absolute bottom-20 right-12 z-20 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
+          className="absolute bottom-32 right-12 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
