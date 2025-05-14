@@ -87,22 +87,25 @@ const Cast = () => {
       imdbLink: "https://www.imdb.com/name/nm0480754/?ref_=fn_al_nm_1"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1469041797191-50ace28483c3",
-      name: "Sofia Ivanova",
-      role: "Sister Margarita",
-      quote: "Her strength in adversity inspired me throughout filming."
+      imageUrl: "/lovable-uploads/ca5b5ce9-5520-4b82-961d-df9733668ee1.png",
+      name: "Hristo Garbov",
+      role: "Old Peter",
+      quote: "I wanted to experience something new - to step, even briefly, into the hearts of those who struggle to forgive themselves.",
+      imdbLink: "https://www.imdb.com/name/nm0305009/?ref_=fn_al_nm_1"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2",
-      name: "Georgi Dimitrov",
-      role: "Father Kiril",
-      quote: "This role taught me about compassion and forgiveness."
+      imageUrl: "/lovable-uploads/3dd976b9-1e17-4d87-98e7-21187060a113.png",
+      name: "Iren Krivoshieva",
+      role: "Dalia, Father Paul and Nikolina's Mother",
+      quote: "I sought this role because I love God, and in that love, I find my freedom.",
+      imdbLink: "https://www.imdb.com/name/nm0471781/?ref_=nv_sr_srsg_1_tt_0_nm_3_in_0_q_Iren%2520Krivu"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed",
-      name: "Viktoria Todorova",
-      role: "Young Elitsa",
-      quote: "Portraying innocence was both challenging and rewarding."
+      imageUrl: "/lovable-uploads/8e727614-a3c6-4158-b896-5eefb6d3c778.png",
+      name: "Nikolai Urumov",
+      role: "Monk Jacob",
+      quote: "Because my character carries a noble mission. And because I have faith that Nikolay Egerman understands both the heart of this story and the way to bring it to life!",
+      imdbLink: "https://www.imdb.com/name/nm0882196/?ref_=fn_al_nm_1"
     },
   ];
 
