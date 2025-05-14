@@ -1,15 +1,17 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Link } from "react-router-dom";
 
 interface CastMemberProps {
   imageUrl: string;
   name: string;
   role: string;
   quote: string;
+  imdbLink?: string;
 }
 
-const CastMember = ({ imageUrl, name, role, quote }: CastMemberProps) => {
-  return (
+const CastMember = ({ imageUrl, name, role, quote, imdbLink }: CastMemberProps) => {
+  const content = (
     <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
       <div className="relative w-full">
         <AspectRatio ratio={1}>
@@ -27,28 +29,41 @@ const CastMember = ({ imageUrl, name, role, quote }: CastMemberProps) => {
       </div>
     </div>
   );
+
+  if (imdbLink) {
+    return (
+      <a href={imdbLink} target="_blank" rel="noopener noreferrer">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 };
 
 const Cast = () => {
-  // Placeholder data for the 3x3 grid
+  // Updated data for the 3x3 grid
   const castMembers = [
     {
-      imageUrl: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      name: "Aleksandar Kanev",
-      role: "Father Neofit",
-      quote: "This role changed my perspective on faith and resilience."
+      imageUrl: "/lovable-uploads/00949b64-4b36-430d-859e-37c4551ab1ca.png",
+      name: "Alexander Kanev",
+      role: "Father Paul",
+      quote: "I took on this role because it speaks to something personal, because it has meaning, and because I believe it gives me something worth saying.",
+      imdbLink: "https://www.imdb.com/name/nm4802566/?ref_=fn_al_nm_5"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-      name: "Maria Petrova",
-      role: "Ana",
-      quote: "Playing Ana was a journey of emotional discovery."
+      imageUrl: "/lovable-uploads/8d305fee-c358-4501-a52f-1f2cd575a048.png",
+      name: "Yani Malinov (in his debut role)",
+      role: "Young Peter",
+      quote: "The director chose me and the experience was very interesting.",
+      imdbLink: "https://www.imdb.com/name/nm16336095/"
     },
     {
-      imageUrl: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
-      name: "Dimitar Nikolov",
-      role: "Young Boyan",
-      quote: "I connected deeply with Boyan's innocence and pain."
+      imageUrl: "/lovable-uploads/949d40a2-030f-46be-ad58-dc12ed18d9ca.png",
+      name: "Irena Milyankova",
+      role: "Nikolina, Father Paul's Sister",
+      quote: "I accepted without a moment of doubt. I believe this role was sent to me by God. It was a calling, and I gave myself to it completely in bringing this character to life.",
+      imdbLink: "https://www.imdb.com/name/nm1930377/?ref_=fn_al_nm_1"
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
