@@ -30,7 +30,7 @@ const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
 
   return (
     <div className="py-16 container mx-auto px-8 max-w-6xl">
-      <h2 className="text-3xl font-bold mb-8 text-black text-center" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>AWARDS AND SELECTIONS</h2>
+      <h2 className="text-3xl font-bold mb-8 text-black text-center uppercase" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>AWARDS AND SELECTIONS</h2>
       <Carousel
         opts={{
           align: "start",
