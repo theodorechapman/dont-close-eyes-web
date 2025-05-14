@@ -10,27 +10,27 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const laurels = [
     {
-      imageUrl: "public/lovable-uploads/d760ff68-e491-430e-8a8b-19a1ca4e3560.png",
+      imageUrl: "/lovable-uploads/d760ff68-e491-430e-8a8b-19a1ca4e3560.png",
       altText: "Winner Best Cinematography - International Christian Film and Music Festival 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/8c89e2dc-269b-48a1-b9a8-5474ffd7c121.png",
+      imageUrl: "/lovable-uploads/8c89e2dc-269b-48a1-b9a8-5474ffd7c121.png",
       altText: "Best Foreign Language Film - London FFI 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/cec3e381-98c9-4866-b338-6cf78caf6343.png",
+      imageUrl: "/lovable-uploads/cec3e381-98c9-4866-b338-6cf78caf6343.png",
       altText: "Best Foreign Film - 53rd Annual ICVM Crown Awards 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/01b71563-8abb-4b3d-aa0c-f9179d05bbc8.png",
+      imageUrl: "/lovable-uploads/01b71563-8abb-4b3d-aa0c-f9179d05bbc8.png",
       altText: "Official Selection - Eurasian Creative Guild Film Festival 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/f763a5e1-0f81-4d0b-987e-db2e4d0076de.png",
+      imageUrl: "/lovable-uploads/f763a5e1-0f81-4d0b-987e-db2e4d0076de.png",
       altText: "Official Selection - Golden FEMI Film Festival 2025"
     },
     {
-      imageUrl: "public/lovable-uploads/83c1428e-c7e7-48de-8354-88155043be39.png",
+      imageUrl: "/lovable-uploads/83c1428e-c7e7-48de-8354-88155043be39.png",
       altText: "IMDb Rating 8.3/10 (223 votes)"
     }
   ];
@@ -65,11 +65,11 @@ const Index = () => {
         <Hero 
           title="DON'T CLOSE YOUR EYES" 
           videoId="CphPCxEUZHM"
-          thumbnailImage="public/lovable-uploads/77f38679-742f-4afd-b471-d00e35cebd3b.png"
+          thumbnailImage="/lovable-uploads/77f38679-742f-4afd-b471-d00e35cebd3b.png"
         />
         <VideoPlayer
           videoId="CphPCxEUZHM"
-          thumbnailImage="public/lovable-uploads/77f38679-742f-4afd-b471-d00e35cebd3b.png"
+          thumbnailImage="/lovable-uploads/77f38679-742f-4afd-b471-d00e35cebd3b.png"
         />
       </div>
       

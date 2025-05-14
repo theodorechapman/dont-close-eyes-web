@@ -9,7 +9,7 @@ const DirectorStatement = ({ name, statement }: DirectorStatementProps) => {
   const paragraphs = statement.split('\n\n');
   
   return (
-    <div className="py-16 px-8 max-w-4xl mx-auto">
+    <div className="py-16 container mx-auto px-8 max-w-6xl">
       <h2 className="text-3xl font-bold mb-8 text-black text-center">DIRECTOR'S STATEMENT</h2>
       <h3 className="text-xl font-bold mb-4 text-black text-center">{name}</h3>
       <div className="text-black space-y-4">

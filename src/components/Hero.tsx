@@ -21,7 +21,7 @@ const Hero = ({ title, videoId, thumbnailImage }: HeroProps) => {
       <div className="flex flex-col h-[calc(100vh-50px)] w-full">
         <div className="z-10 py-6 absolute w-full top-0">
           <h2 className="text-center font-bold text-2xl tracking-wide">
-            ICXC NIKA / ITCHY RODENT FILMS
+            ICXC NIKA and ITCHY RODENT FILMS
           </h2>
         </div>
         

@@ -29,7 +29,7 @@ const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
   }, [api]);
 
   return (
-    <div className="py-16 px-8">
+    <div className="py-16 container mx-auto px-8 max-w-6xl">
       <h2 className="text-3xl font-bold mb-8 text-black text-center">AWARDS & SELECTIONS</h2>
       <Carousel
         opts={{
@@ -37,7 +37,7 @@ const LaurelCarousel = ({ laurels }: { laurels: LaurelProps[] }) => {
           loop: true,
         }}
         setApi={setApi}
-        className="w-full max-w-5xl mx-auto"
+        className="w-full mx-auto"
       >
         <CarouselContent>
           {laurels.map((laurel, index) => (

@@ -28,7 +28,7 @@ const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
   }, [api]);
 
   return (
-    <div className="py-16 px-8 bg-white">
+    <div className="py-16 container mx-auto px-8 max-w-6xl bg-white">
       <h2 className="text-3xl font-bold mb-8 text-black text-center">OUR AUDIENCES</h2>
       <Carousel
         opts={{
@@ -36,7 +36,7 @@ const AudienceReviews = ({ reviews }: { reviews: ReviewProps[] }) => {
           loop: true,
         }}
         setApi={setApi}
-        className="w-full max-w-5xl mx-auto"
+        className="w-full mx-auto"
       >
         <CarouselContent>
           {reviews.map((review, index) => (
