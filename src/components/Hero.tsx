@@ -29,7 +29,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         backgroundPosition: 'center'
       }}
     >      
-      <div className="flex flex-col h-[100vh] w-full">
+      <div className={`flex flex-col w-full ${isMobile ? 'h-[calc(100vh-75px)]' : 'h-[100vh]'}`}>
         <div className="z-10 py-6 absolute w-full top-0">
           <h2 className="text-center">
             <a 
@@ -47,7 +47,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           <div 
             className="absolute bottom-24 z-20"
             style={{ 
-              transform: isMobile ? 'translateY(95px)' : 'translateY(140px)', // Added 5px more on mobile (90px + 5px = 95px)
+              transform: isMobile ? 'translateY(95px)' : 'translateY(140px)',
               left: isMobile ? '5%' : '2rem',
               marginLeft: '0',
             }}
@@ -57,7 +57,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
               alt="Don't Close Your Eyes" 
               className={`${isMobile ? 'max-w-[78%]' : 'max-w-[53%]'} h-auto`}
-              style={{ width: isMobile ? '118.8%' : '66%' }} // Increased by 20% more on mobile (99% * 1.2 = 118.8%)
+              style={{ width: isMobile ? '118.8%' : '66%' }}
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         <button 
           onClick={scrollToContent}
           className="absolute bottom-8 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
-          style={{ right: isMobile ? '37px' : '48px' }} // 10px more to the left on mobile (47px - 10px = 37px)
+          style={{ right: isMobile ? '37px' : '48px' }}
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
