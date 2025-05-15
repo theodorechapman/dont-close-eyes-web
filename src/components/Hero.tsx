@@ -1,3 +1,4 @@
+
 import { ArrowDown } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -46,26 +47,26 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           <div 
             className="absolute bottom-24 z-20"
             style={{ 
-              transform: isMobile ? 'translateY(75px)' : 'translateY(125px)',
-              left: isMobile ? '5%' : '2rem', // Shifted 10px more to the left on desktop
+              transform: isMobile ? 'translateY(90px)' : 'translateY(140px)', // Added 15px to move lower
+              left: isMobile ? '5%' : '2rem',
               marginLeft: '0',
             }}
           >
-            {/* Title image - mobile size increased by 25%, desktop unchanged */}
+            {/* Title image - mobile size increased by 20% more */}
             <img 
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
               alt="Don't Close Your Eyes" 
               className={`${isMobile ? 'max-w-[78%]' : 'max-w-[53%]'} h-auto`}
-              style={{ width: isMobile ? '82.5%' : '66%' }} // Increased by 25% on mobile (66% * 1.25 = 82.5%)
+              style={{ width: isMobile ? '99%' : '66%' }} // Increased by 20% more on mobile (82.5% * 1.2 = 99%)
             />
           </div>
         </div>
         
-        {/* Scroll down arrow button - positioned lower in the bottom corner */}
+        {/* Scroll down arrow button - moved 15px more to the right on mobile */}
         <button 
           onClick={scrollToContent}
           className="absolute bottom-8 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
-          style={{ right: isMobile ? '62px' : '48px' }} // More to the right on mobile
+          style={{ right: isMobile ? '77px' : '48px' }} // 15px more to the right on mobile (62px + 15px = 77px)
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
