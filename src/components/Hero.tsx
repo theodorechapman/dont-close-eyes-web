@@ -57,16 +57,16 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
               alt="Don't Close Your Eyes" 
               className={`${isMobile ? 'max-w-[78%]' : 'max-w-[53%]'} h-auto`}
-              style={{ width: isMobile ? '99%' : '66%' }} // Increased by 20% more on mobile (82.5% * 1.2 = 99%)
+              style={{ width: isMobile ? '118.8%' : '66%' }} // Increased by 20% more on mobile (99% * 1.2 = 118.8%)
             />
           </div>
         </div>
         
-        {/* Scroll down arrow button - moved 30px to the left on mobile */}
+        {/* Scroll down arrow button - moved 10px more to the left on mobile */}
         <button 
           onClick={scrollToContent}
           className="absolute bottom-8 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
-          style={{ right: isMobile ? '47px' : '48px' }} // 30px more to the left on mobile (77px - 30px = 47px)
+          style={{ right: isMobile ? '37px' : '48px' }} // 10px more to the left on mobile (47px - 10px = 37px)
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
