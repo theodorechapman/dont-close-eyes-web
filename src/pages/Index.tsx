@@ -7,10 +7,8 @@ import AudienceReviews from "@/components/AudienceReviews";
 import DirectorStatement from "@/components/DirectorStatement";
 import Cast from "@/components/Cast"; // Importing the new Cast component
 import Footer from "@/components/Footer";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
-  const isMobile = useIsMobile();
   const laurels = [
     {
       imageUrl: "/lovable-uploads/5f42280f-2394-4264-99cc-15e4119fc9a8.png",
@@ -77,10 +75,7 @@ const Index = () => {
         />
       </div>
       
-      <div 
-        className="white-section text-black"
-        style={{ marginTop: isMobile ? '-75px' : '0' }}
-      >
+      <div className="white-section text-black">
         <LaurelCarousel laurels={laurels} />
         <LogLine text={loglineText} />
         <Cast />
