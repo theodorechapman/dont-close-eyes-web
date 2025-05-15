@@ -29,7 +29,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         backgroundPosition: 'center'
       }}
     >      
-      <div className="flex flex-col h-[100vh] w-full">
+      <div className="flex flex-col w-full" style={{ height: isMobile ? 'calc(100vh - 75px)' : '100vh' }}>
         <div className="z-10 py-6 absolute w-full top-0">
           <h2 className="text-center">
             <a 
