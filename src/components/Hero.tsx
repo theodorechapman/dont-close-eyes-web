@@ -48,24 +48,24 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
             className="absolute bottom-24 z-20"
             style={{ 
               transform: isMobile ? 'translateY(75px)' : 'translateY(125px)',
-              left: isMobile ? '50%' : '3rem',
-              marginLeft: isMobile ? '-50%' : '0', // Centered on mobile
+              left: isMobile ? '5%' : '3rem', // Changed from center to left-justified
+              marginLeft: '0', // Removed center positioning
             }}
           >
             {/* Title image - reduced to 66% of original size */}
             <img 
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
               alt="Don't Close Your Eyes" 
-              className={`${isMobile ? 'max-w-[63%]' : 'max-w-[53%]'} h-auto mx-auto`}
+              className={`${isMobile ? 'max-w-[63%]' : 'max-w-[53%]'} h-auto`} // Removed mx-auto
               style={{ width: '66%' }}
             />
           </div>
         </div>
         
-        {/* Scroll down arrow button - positioned above the thumbnail area for better visibility */}
+        {/* Scroll down arrow button - positioned lower, closer to the edge of the image */}
         <button 
           onClick={scrollToContent}
-          className="absolute bottom-32 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
+          className="absolute bottom-16 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors" // Changed bottom positioning
           style={{ right: isMobile ? '37px' : '48px' }}
           aria-label="Scroll down"
         >
@@ -73,7 +73,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         </button>
       </div>
       
-      <div className="white-bar w-full h-16 bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] absolute bottom-0"></div>
+      {/* Removed the white bar */}
     </div>
   );
 };
