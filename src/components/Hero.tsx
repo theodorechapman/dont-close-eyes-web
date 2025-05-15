@@ -47,7 +47,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           <div 
             className="absolute bottom-24 z-20"
             style={{ 
-              transform: isMobile ? 'translateY(90px)' : 'translateY(140px)', // Added 15px to move lower
+              transform: isMobile ? 'translateY(95px)' : 'translateY(140px)', // Added 5px more on mobile (90px + 5px = 95px)
               left: isMobile ? '5%' : '2rem',
               marginLeft: '0',
             }}
@@ -62,11 +62,11 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           </div>
         </div>
         
-        {/* Scroll down arrow button - moved 15px more to the right on mobile */}
+        {/* Scroll down arrow button - moved 30px to the left on mobile */}
         <button 
           onClick={scrollToContent}
           className="absolute bottom-8 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
-          style={{ right: isMobile ? '77px' : '48px' }} // 15px more to the right on mobile (62px + 15px = 77px)
+          style={{ right: isMobile ? '47px' : '48px' }} // 30px more to the left on mobile (77px - 30px = 47px)
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
