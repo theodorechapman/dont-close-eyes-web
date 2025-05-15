@@ -52,11 +52,12 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
               marginLeft: isMobile ? '-50%' : '0', // Centered on mobile
             }}
           >
-            {/* Replace text with image */}
+            {/* Title image - reduced to 66% of original size */}
             <img 
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
               alt="Don't Close Your Eyes" 
-              className={`${isMobile ? 'max-w-[95%]' : 'max-w-[80%]'} h-auto`}
+              className={`${isMobile ? 'max-w-[63%]' : 'max-w-[53%]'} h-auto mx-auto`}
+              style={{ width: '66%' }}
             />
           </div>
         </div>
@@ -64,7 +65,8 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         {/* Scroll down arrow button - positioned above the thumbnail area for better visibility */}
         <button 
           onClick={scrollToContent}
-          className="absolute bottom-32 right-12 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
+          className="absolute bottom-32 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
+          style={{ right: isMobile ? '37px' : '48px' }}
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
