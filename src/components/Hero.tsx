@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -22,14 +21,14 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
   
   return (
     <div 
-      className="min-h-[calc(100vh-50px)] w-full flex flex-col relative overflow-hidden"
+      className="min-h-[100vh] w-full flex flex-col relative overflow-hidden"
       style={{
         backgroundImage: thumbnailImage ? `url(${thumbnailImage})` : 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >      
-      <div className="flex flex-col h-[calc(100vh-50px)] w-full">
+      <div className="flex flex-col h-[100vh] w-full">
         <div className="z-10 py-6 absolute w-full top-0">
           <h2 className="text-center">
             <a 
@@ -48,32 +47,30 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
             className="absolute bottom-24 z-20"
             style={{ 
               transform: isMobile ? 'translateY(75px)' : 'translateY(125px)',
-              left: isMobile ? '5%' : '3rem', // Changed from center to left-justified
-              marginLeft: '0', // Removed center positioning
+              left: isMobile ? '5%' : '2rem', // Shifted 10px more to the left on desktop
+              marginLeft: '0',
             }}
           >
-            {/* Title image - reduced to 66% of original size */}
+            {/* Title image - mobile size increased by 25%, desktop unchanged */}
             <img 
               src="/lovable-uploads/6cab4f73-e5c1-4705-8d06-ea31c221d604.png" 
               alt="Don't Close Your Eyes" 
-              className={`${isMobile ? 'max-w-[63%]' : 'max-w-[53%]'} h-auto`} // Removed mx-auto
-              style={{ width: '66%' }}
+              className={`${isMobile ? 'max-w-[78%]' : 'max-w-[53%]'} h-auto`}
+              style={{ width: isMobile ? '82.5%' : '66%' }} // Increased by 25% on mobile (66% * 1.25 = 82.5%)
             />
           </div>
         </div>
         
-        {/* Scroll down arrow button - positioned lower, closer to the edge of the image */}
+        {/* Scroll down arrow button - positioned lower in the bottom corner */}
         <button 
           onClick={scrollToContent}
-          className="absolute bottom-16 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors" // Changed bottom positioning
-          style={{ right: isMobile ? '37px' : '48px' }}
+          className="absolute bottom-8 z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
+          style={{ right: isMobile ? '62px' : '48px' }} // More to the right on mobile
           aria-label="Scroll down"
         >
           <ArrowDown size={36} className="text-white" />
         </button>
       </div>
-      
-      {/* Removed the white bar */}
     </div>
   );
 };
