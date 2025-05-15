@@ -29,7 +29,7 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
         backgroundPosition: 'center'
       }}
     >      
-      <div className={`flex flex-col w-full ${isMobile ? 'h-[calc(100vh-75px)]' : 'h-[100vh]'}`}>
+      <div className={`flex flex-col w-full ${isMobile ? 'h-[calc(100vh-150px)]' : 'h-[100vh]'}`}>
         <div className="z-10 py-6 absolute w-full top-0">
           <h2 className="text-center">
             <a 
@@ -62,13 +62,13 @@ const Hero = ({ videoId, thumbnailImage }: HeroProps) => {
           </div>
         </div>
         
-        {/* Scroll down arrow button - moved 75px upwards on mobile */}
+        {/* Scroll down arrow button - moved further upwards on mobile */}
         <button 
           onClick={scrollToContent}
           className="absolute z-30 animate-bounce bg-transparent border-none cursor-pointer p-2 rounded-full hover:bg-black/20 transition-colors"
           style={{ 
             right: isMobile ? '37px' : '48px',
-            bottom: isMobile ? '83px' : '8px' 
+            bottom: isMobile ? '98px' : '8px' 
           }}
           aria-label="Scroll down"
         >

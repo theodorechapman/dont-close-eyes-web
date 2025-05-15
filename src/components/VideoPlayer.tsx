@@ -20,8 +20,8 @@ const VideoPlayer = ({ videoId }: VideoPlayerProps) => {
       className="play-button-container absolute inset-0 flex items-center justify-center cursor-pointer" 
       onClick={openVideo}
       style={{ 
-        top: isMobile ? '-75px' : '0',
-        bottom: isMobile ? '75px' : '0'
+        top: isMobile ? '-150px' : '0',
+        bottom: isMobile ? '150px' : '0'
       }}
     >
       <button
